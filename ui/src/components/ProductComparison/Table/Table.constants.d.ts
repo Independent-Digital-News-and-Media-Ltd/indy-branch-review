@@ -1,0 +1,10 @@
+export declare const BUY_NOW_VARIANT = "secondary";
+export declare const BUY_NOW_TEXT = "Buy now";
+export declare const BUY_NOW_TARGET = "_blank";
+export declare const REVIEW_VARIANT = "tertiary";
+export declare const REVIEW_TEXT = "Read review";
+export declare const REVIEW_TARGET = "_blank";
+export declare const SPEC_RATING_KEY = "Rating:";
+export declare const SPEC_RATING_SIZE = "small";
+export declare const SPEC_RATING_TOTAL = 5;
+export declare const SPEC_PRICE_KEY = "Price:";
