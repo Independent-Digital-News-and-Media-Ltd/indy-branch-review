@@ -1,0 +1,2 @@
+var l=Object.defineProperty;var t=(e,r)=>l(e,"name",{value:r,configurable:!0});import{r as o}from"./index-b56a0300.js";const a=t(e=>o.createElement("svg",{xmlns:"http://www.w3.org/2000/svg",id:"26a5d9a8e9ededed",viewBox:"0 0 32 32",...e},o.createElement("path",{fill:"currentColor",d:"m12.94 8-1.88 1.88 6.1 6.12-6.1 6.12L12.94 24l8-8-8-8Z"})),"SvgChevronRightSolid32"),_=Object.freeze(Object.defineProperty({__proto__:null,default:a},Symbol.toStringTag,{value:"Module"}));export{a as S,_};
+//# sourceMappingURL=chevron-right-solid-32-882dcd5f.js.map
