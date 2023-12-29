@@ -1,0 +1,6 @@
+import{C as s,a as i,b as a,c}from"./Checkbox-f1b33e22.js";import"./jsx-runtime-91e341d4.js";import"./index-b56a0300.js";import"./_commonjsHelpers-c38d1a10.js";import"./index-ed86a6de.js";import"./styled-components.browser.esm-e8b8309e.js";import"./mixins-fc6d8569.js";import"./fontFamilies-7c0fee34.js";import"./palette-7306e6b0.js";import"./colors-4f72dc3a.js";import"./devices-d44d55be.js";import"./breakPoints-e2ca7578.js";import"./check-solid-16-b43a8f30.js";const B={title:"Elements/Checkbox",component:s,args:{children:"Primary checkbox",disabled:!1,id:"checkbox"},argTypes:{children:{description:"Content of the checkbox",defaultValue:"Checkbox",type:{name:"string",required:!0},control:{type:"text"}},size:{description:"Whether the width is dictated by the content or full width",control:"inline-radio",options:[i,a,c]}}},e={args:{size:i}};var t,r,o;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  args: {
+    size: CHECKBOX_SIZE_SMALL
+  }
+}`,...(o=(r=e.parameters)==null?void 0:r.docs)==null?void 0:o.source}}};const f=["Base"];export{e as Base,f as __namedExportsOrder,B as default};
+//# sourceMappingURL=Checkbox.stories-61512c80.js.map
