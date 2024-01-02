@@ -1,0 +1,185 @@
+/**
+ * @jest-environment jsdom
+ */
+
+import {
+  CHARTBEAT_EVENT_NEWSLETTER_SIGNUP_CANCEL,
+  CHARTBEAT_EVENT_NEWSLETTER_SIGNUP_START,
+} from '@app/constants/chartbeat';
+
+import { trackChartbeat } from '@app/public/js/chartbeat';
+
+import { FormState } from '../../FormState';
+import {
+  watchNewsletters,
+  NEWSLETTER_CHECKBOX_SELECTOR,
+} from '../watchNewsletters';
+
+jest.mock('@app/public/js/chartbeat');
+
+describe('watchNewsletters()', () => {
+  let mockUpdateSelectedNewsletters;
+  let state;
+  const mockNewsletterChartbeatData = {
+    eventLabel: '/newsletters',
+  };
+  const mockActiveSelectedNewsletter = { current: null };
+
+  beforeEach(() => {
+    document.body.innerHTML = `
+      <div id="alpha">
+        <input
+          class="newsletter-page-select-checkbox"
+         name="alpha" type="checkbox"/>
+      </div>
+      <div id="beta">
+        <input
+          class="newsletter-page-select-checkbox"
+          name="beta" type="checkbox"/>
+      </div>
+      <div id="gamma">
+        <input
+          class="newsletter-page-select-checkbox"
+          name="gamma" type="checkbox"/>
+      </div>
+      <div id="charlie">
+        <input
+          class="newsletter-page-select-checkbox"
+          name="charlie" type="checkbox" checked="true" />
+      </div>
+    `;
+
+    state = new FormState();
+    mockUpdateSelectedNewsletters = jest.fn();
+    state.updateSelectedNewsletters = mockUpdateSelectedNewsletters;
+  });
+
+  afterEach(() => {
+    document.body.innerHTML = '';
+    mockActiveSelectedNewsletter.current = null;
+    jest.clearAllMocks();
+  });
+
+  describe('when `intransit` newsletters array changes', () => {
+    beforeEach(() => {
+      watchNewsletters(
+        state,
+        mockNewsletterChartbeatData,
+        mockActiveSelectedNewsletter,
+      );
+
+      state.data.newsletters.intransit = ['alpha', 'beta'];
+
+      state.digest();
+    });
+
+    it('should add `subscribed` class to each corresponding card', () => {
+      const alphaCardEl = document.getElementById('alpha');
+      expect(alphaCardEl.classList.contains('subscribed')).toBe(true);
+
+      const betaCardEl = document.getElementById('beta');
+      expect(betaCardEl.classList.contains('subscribed')).toBe(true);
+
+      const gammaCardEl = document.getElementById('gamma');
+      expect(gammaCardEl.classList.contains('subscribed')).toBe(false);
+    });
+
+    it('should deactivate checkbox for newsletter that is in `intransit` array', () => {
+      const alphaCheckbox = document
+        .getElementById('alpha')
+        .querySelector(NEWSLETTER_CHECKBOX_SELECTOR);
+
+      alphaCheckbox.dispatchEvent(new Event('change'));
+
+      expect(mockUpdateSelectedNewsletters.mock.calls.length).toBe(0);
+    });
+
+    it('should deactivate checkbox for newsletter that is in `intransit` array', () => {
+      const betaCheckbox = document
+        .getElementById('beta')
+        .querySelector(NEWSLETTER_CHECKBOX_SELECTOR);
+
+      betaCheckbox.dispatchEvent(new Event('change'));
+
+      expect(mockUpdateSelectedNewsletters.mock.calls.length).toBe(0);
+    });
+
+    it('should NOT deactivate checkbox for newsletter that is NOT in `intransit` array', () => {
+      const gammaCheckbox = document
+        .getElementById('gamma')
+        .querySelector(NEWSLETTER_CHECKBOX_SELECTOR);
+
+      gammaCheckbox.dispatchEvent(new Event('change'));
+
+      expect(mockUpdateSelectedNewsletters.mock.calls.length).toBe(1);
+    });
+
+    it('should track newsletter started event via Chartbeat when checkbox is first checked and store selected newsletter', () => {
+      const gammaCheckbox = document
+        .getElementById('charlie')
+        .querySelector(NEWSLETTER_CHECKBOX_SELECTOR);
+
+      gammaCheckbox.dispatchEvent(new Event('change'));
+
+      expect(trackChartbeat).toHaveBeenCalledTimes(1);
+      expect(trackChartbeat).toHaveBeenCalledWith(
+        CHARTBEAT_EVENT_NEWSLETTER_SIGNUP_START,
+        {
+          ...mockNewsletterChartbeatData,
+          eventValue: 'charlie',
+        },
+      );
+      expect(mockActiveSelectedNewsletter.current).toBe('charlie');
+    });
+
+    it('should track newsletter cancelled event via Chartbeat when checkbox is de-checked', () => {
+      const gammaCheckbox = document
+        .getElementById('gamma')
+        .querySelector(NEWSLETTER_CHECKBOX_SELECTOR);
+
+      gammaCheckbox.dispatchEvent(new Event('change'));
+
+      expect(trackChartbeat).toHaveBeenCalledTimes(1);
+      expect(trackChartbeat).toHaveBeenCalledWith(
+        CHARTBEAT_EVENT_NEWSLETTER_SIGNUP_CANCEL,
+        {
+          ...mockNewsletterChartbeatData,
+          eventValue: 'gamma',
+        },
+      );
+    });
+  });
+
+  describe('when `selected` newsletters array changes', () => {
+    beforeEach(() => {
+      watchNewsletters(
+        state,
+        mockNewsletterChartbeatData,
+        mockActiveSelectedNewsletter,
+      );
+
+      // First, put newsletter into `intransit` array. This will remove the
+      // event listener and add the `subscribed` class
+      state.data.newsletters.intransit = ['gamma'];
+      state.digest();
+
+      state.data.newsletters.selected = ['gamma'];
+      state.digest();
+    });
+
+    it('should remove `subscribed` class from corresponding card', () => {
+      const gammaCardEl = document.getElementById('gamma');
+      expect(gammaCardEl.classList.contains('subscribed')).toBe(false);
+    });
+
+    it('should re-enable checkbox for newsletter in `selected` array', () => {
+      const gammaCheckbox = document
+        .getElementById('gamma')
+        .querySelector(NEWSLETTER_CHECKBOX_SELECTOR);
+
+      gammaCheckbox.dispatchEvent(new Event('change'));
+
+      expect(mockUpdateSelectedNewsletters.mock.calls.length).toBe(1);
+    });
+  });
+});
