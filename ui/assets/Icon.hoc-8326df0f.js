@@ -1,0 +1,2 @@
+var i=Object.defineProperty;var r=(o,t)=>i(o,"name",{value:t,configurable:!0});import{j as e}from"./jsx-runtime-91e341d4.js";import{I as s}from"./Icon-5967eeb8.js";function n(o){return r(function(c){return e.jsx(s,{...c,svg:o})},"LogoIcon")}r(n,"withIcon");try{n.displayName="withIcon",n.__docgenInfo={description:"",displayName:"withIcon",props:{}}}catch{}
+//# sourceMappingURL=Icon.hoc-8326df0f.js.map
