@@ -1,0 +1,34 @@
+export const Wrapper: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<import("react").DetailedHTMLProps<import("react").HTMLAttributes<HTMLDivElement>, HTMLDivElement>, never>>;
+export const List: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<import("react").DetailedHTMLProps<import("react").HTMLAttributes<HTMLUListElement>, HTMLUListElement>, never>>;
+export const Title: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<import("react").DetailedHTMLProps<import("react").HTMLAttributes<HTMLDivElement>, HTMLDivElement>, never>>;
+export const ItemIcon: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<import("styled-components/dist/types").FastOmit<import("styled-components/dist/types").Substitute<{
+    [x: string]: any;
+    svg: any;
+}, {
+    [x: string]: any;
+    svg: any;
+}>, never>, never>> & Omit<{
+    ({ svg, ...rest }: {
+        [x: string]: any;
+        svg: any;
+    }): import("react/jsx-runtime").JSX.Element;
+    propTypes: {
+        svg: any;
+    };
+}, keyof import("react").Component<any, {}, any>>;
+export const Chevron: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<import("styled-components/dist/types").FastOmit<import("styled-components/dist/types").Substitute<{
+    [x: string]: any;
+    svg: any;
+}, {
+    [x: string]: any;
+    svg: any;
+}>, never>, never>> & Omit<{
+    ({ svg, ...rest }: {
+        [x: string]: any;
+        svg: any;
+    }): import("react/jsx-runtime").JSX.Element;
+    propTypes: {
+        svg: any;
+    };
+}, keyof import("react").Component<any, {}, any>>;
+export const Item: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<import("react").DetailedHTMLProps<import("react").AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>, never>>;
