@@ -1,0 +1,1 @@
+{"version":3,"file":"formatPrice-c665c98d.js","sources":["../../../src/components/ProductComparisonCommon/helpers/formatPrice.ts"],"sourcesContent":["export const formatPrice = (price: string) => {\n  return price.split('.')[0];\n};\n"],"names":["formatPrice","price","split"],"mappings":"+EAAaA,MAAAA,EAAcA,EAACC,GACnBA,EAAMC,MAAM,GAAG,EAAE,CAAC,EADAF"}
