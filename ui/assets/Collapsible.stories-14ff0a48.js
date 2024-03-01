@@ -1,0 +1,5 @@
+import{j as s}from"./jsx-runtime-91e341d4.js";import{C as a}from"./Content-f44f62ef.js";import{M as m}from"./MockCopy-f6059a14.js";import{C as p}from"./Collapsible-9d4495f6.js";import"./index-b56a0300.js";import"./_commonjsHelpers-c38d1a10.js";import"./styled-components.browser.esm-dd68fb2f.js";import"./devices-1d39230d.js";import"./breakPoints-89c7d41a.js";import"./TextBlock-42a3ec03.js";import"./Dropdown-2f1c0625.js";import"./index-6925154b.js";const k={title:"Components/Text Block/Collapsible",component:p,parameters:{controls:{exclude:["children"]}}},n={id:"collapsible",lines:9,children:s.jsx(m,{})},o={args:n,decorators:[a]};var r,t,e;o.parameters={...o.parameters,docs:{...(r=o.parameters)==null?void 0:r.docs,source:{originalSource:`{
+  args: defaultArgs,
+  decorators: [Content]
+}`,...(e=(t=o.parameters)==null?void 0:t.docs)==null?void 0:e.source}}};const A=["Default"];export{o as Default,A as __namedExportsOrder,k as default};
+//# sourceMappingURL=Collapsible.stories-14ff0a48.js.map
