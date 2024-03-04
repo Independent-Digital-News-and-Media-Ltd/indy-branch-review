@@ -1,0 +1,14 @@
+export declare const BUTTON_AS_BUTTON = "button";
+export declare const BUTTON_AS_ANCHOR = "a";
+export declare const BUTTON_SIZE_SMALL = "small";
+export declare const BUTTON_SIZE_BASE = "base";
+export declare const BUTTON_SIZE_LARGE = "large";
+export declare const BUTTON_VARIANT_PRIMARY = "primary";
+export declare const BUTTON_VARIANT_SECONDARY = "secondary";
+export declare const BUTTON_VARIANT_TERTIARY = "tertiary";
+export declare const BUTTON_VARIANT_E_COMMERCE = "e-commerce";
+export declare const BUTTON_VARIANT_PRIMARY_UNCAP = "primary-uncap";
+export declare const BUTTON_THEME_DEFAULT = "base";
+export declare const BUTTON_THEME_PREMIUM = "premium";
+export declare const BUTTON_THEME_CLIMATE = "climate";
+export declare const BUTTON_THEME_SGI = "sgi";
