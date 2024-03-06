@@ -1,0 +1,2 @@
+var l=Object.defineProperty;var t=(e,r)=>l(e,"name",{value:r,configurable:!0});import{r as o}from"./index-b56a0300.js";const a=t(e=>o.createElement("svg",{xmlns:"http://www.w3.org/2000/svg",id:"f6fa6af3069dc6f6",viewBox:"0 0 16 16",...e},o.createElement("path",{fill:"currentColor",d:"M5.86 10.58 3.08 7.8l-.94.94 3.72 3.73 8-8-.94-.94z"})),"SvgTick16"),f=Object.freeze(Object.defineProperty({__proto__:null,default:a},Symbol.toStringTag,{value:"Module"}));export{a as S,f as _};
+//# sourceMappingURL=tick-16-1a0b28a6.js.map
