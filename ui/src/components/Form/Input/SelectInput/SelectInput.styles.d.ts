@@ -1,0 +1,4 @@
+import { HTMLProps } from 'react';
+export declare const Select: import("react").FC<HTMLProps<HTMLSelectElement>>;
+export declare const DropdownIcon: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<import("styled-components/dist/types").FastOmit<import("styled-components/dist/types").Substitute<import("../../../Icon/Icon.types").IconProps, import("../../../Icon/Icon.types").IconProps>, never>, never>> & Omit<import("react").FC<import("../../../Icon/Icon.types").IconProps>, keyof import("react").Component<any, {}, any>>;
+export declare const IconWrapper: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<import("react").DetailedHTMLProps<import("react").HTMLAttributes<HTMLDivElement>, HTMLDivElement>, never>>;
