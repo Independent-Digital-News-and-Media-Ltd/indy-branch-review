@@ -1,0 +1,1 @@
+export const StyledAuthorHighlight: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<import("../AuthorHighlight.types").AuthorHighlightProps, never>> & Omit<import("react").FC<import("../AuthorHighlight.types").AuthorHighlightProps>, keyof import("react").Component<any, {}, any>>;
