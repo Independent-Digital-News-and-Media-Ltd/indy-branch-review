@@ -1,0 +1,4 @@
+import{j as o}from"./jsx-runtime-91e341d4.js";import{M as r}from"./MockContent-58dddf9c.js";import{P as i}from"./ProductViewLayout-c3f7569d.js";import"./index-b56a0300.js";import"./_commonjsHelpers-c38d1a10.js";import"./styled-components.browser.esm-dd68fb2f.js";import"./devices-f8e8a791.js";const g={title:"Components/Product View Layout",component:i,argTypes:{top:{control:{disable:!0}},left:{control:{disable:!0}},right:{control:{disable:!0}}}},l={top:o.jsx(r,{label:"Top"}),left:o.jsx(r,{label:"Left"}),right:o.jsx(r,{label:"Right"})},t={args:l};var e,s,a;t.parameters={...t.parameters,docs:{...(e=t.parameters)==null?void 0:e.docs,source:{originalSource:`{
+  args: defaultArgs
+}`,...(a=(s=t.parameters)==null?void 0:s.docs)==null?void 0:a.source}}};const x=["Default"];export{t as Default,x as __namedExportsOrder,g as default};
+//# sourceMappingURL=ProductViewLayout.stories-dd5d1a58.js.map

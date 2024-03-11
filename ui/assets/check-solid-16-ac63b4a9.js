@@ -1,0 +1,2 @@
+var l=Object.defineProperty;var t=(e,r)=>l(e,"name",{value:r,configurable:!0});import{r as o}from"./index-b56a0300.js";const a=t(e=>o.createElement("svg",{xmlns:"http://www.w3.org/2000/svg",id:"1fb61e0d3dc0ad8f",viewBox:"0 0 16 16",...e},o.createElement("path",{fill:"currentColor",d:"M6.35 10.35 3.83 7.9l-.84.81 3.36 3.27 7.21-7-.84-.82z"})),"SvgCheckSolid16"),d=Object.freeze(Object.defineProperty({__proto__:null,default:a},Symbol.toStringTag,{value:"Module"}));export{a as S,d as _};
+//# sourceMappingURL=check-solid-16-ac63b4a9.js.map
