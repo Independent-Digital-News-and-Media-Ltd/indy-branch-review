@@ -1,0 +1,2 @@
+var o=Object.defineProperty;var a=(t,s)=>o(t,"name",{value:s,configurable:!0});import{c as p,e as l,a as m,d as n}from"./devices-f8e8a791.js";const e=a((t,s=16/9)=>({width:`${t}px`,height:`${Math.round(t*s)}px`}),"size"),i={name:"Mobile",styles:e(p),type:"mobile"},y={name:"Tablet",styles:e(l,4/3),type:"tablet"},c={name:"Laptop",styles:e(m,10/16),type:"desktop"},$={name:"Desktop",styles:e(n,10/16),type:"desktop"};export{$ as d,c as l,i as m,y as t};
+//# sourceMappingURL=viewports-dcde50e7.js.map
