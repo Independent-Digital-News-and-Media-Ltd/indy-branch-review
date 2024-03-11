@@ -1,0 +1,2 @@
+import{a as t,d as s,m as a,t as o,l as e,b as l}from"./devices-f8e8a791.js";const S=["mobile","tablet","laptop","desktop"],n=16,c={mobile:40,tablet:40,laptop:48,desktop:48},b={mobile:4,tablet:8,laptop:12,desktop:12},C={mobile:"100vw",tablet:"100vw",laptop:t,desktop:s},d={mobile:a,tablet:o,laptop:e,desktop:l},m="--grid",i="--columns",E="--gutter",_="--offset",k="--span",L="--column-width",T="--overhang",r="--alley";export{c as A,E as C,S as D,n as G,d as M,i as a,b,m as c,C as d,L as e,T as f,_ as g,r as h,k as i};
+//# sourceMappingURL=Grid.constants-af186e8d.js.map
