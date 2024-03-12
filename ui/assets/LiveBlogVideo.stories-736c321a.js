@@ -1,0 +1,9 @@
+var p=Object.defineProperty;var i=(e,t)=>p(e,"name",{value:t,configurable:!0});import{j as a}from"./jsx-runtime-91e341d4.js";import{u as n}from"./styled-components.browser.esm-dd68fb2f.js";import{I as l}from"./Image-388cf5e5.js";import{P as m,a as g}from"./MediaPlusCaption-e34a9fe2.js";import"./index-b56a0300.js";import"./_commonjsHelpers-c38d1a10.js";import"./devices-f8e8a791.js";const u=n(g).withConfig({componentId:"sc-wlvfei-0"})(["max-width:100%;clear:both;","{margin-bottom:","px;background:",";}"],m,({theme:e})=>e.spacing.x2,({theme:e})=>e.color.canvas.base),r=i(({caption:e,children:t})=>a.jsx(u,{caption:e,children:t}),"LiveBlogVideo");try{r.displayName="LiveBlogVideo",r.__docgenInfo={description:"",displayName:"LiveBlogVideo",props:{caption:{defaultValue:null,description:"",name:"caption",required:!0,type:{name:"string"}},className:{defaultValue:null,description:"",name:"className",required:!1,type:{name:"string"}}}}}catch{}const f=n.div.withConfig({componentId:"sc-1ejxcmm-0"})(["padding:20px;background-color:",";"],({theme:e})=>e.color.canvas.secondary),x=n(l).withConfig({componentId:"sc-1ejxcmm-1"})(["display:block;aspect-ratio:3 / 2;object-fit:cover;"]),L={title:"Components/Live Blog Video",component:r},v={caption:"Live blog video caption"},o={args:v,render:e=>a.jsx(f,{children:a.jsx(r,{...e,children:a.jsx(x,{})})})};var s,d,c;o.parameters={...o.parameters,docs:{...(s=o.parameters)==null?void 0:s.docs,source:{originalSource:`{
+  args: defaultArgs,
+  render: args => <Wrapper>
+      <LiveBlogVideo {...args}>
+        <StyledImage />
+      </LiveBlogVideo>
+    </Wrapper>
+}`,...(c=(d=o.parameters)==null?void 0:d.docs)==null?void 0:c.source}}};const B=["Default"];export{o as Default,B as __namedExportsOrder,L as default};
+//# sourceMappingURL=LiveBlogVideo.stories-736c321a.js.map
