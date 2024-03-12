@@ -1,0 +1,5 @@
+/// <reference types="react" />
+export declare const Wrapper: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<import("react").DetailedHTMLProps<import("react").HTMLAttributes<HTMLDivElement>, HTMLDivElement>, never>>;
+export declare const QuotesSVG: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<any, never>> | (import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<any, never>> & Omit<any, keyof import("react").Component<any, {}, any>>);
+export declare const Quote: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<import("react").DetailedHTMLProps<import("react").HTMLAttributes<HTMLDivElement>, HTMLDivElement>, never>>;
+export declare const Cite: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<import("react").DetailedHTMLProps<import("react").HTMLAttributes<HTMLDivElement>, HTMLDivElement>, never>>;

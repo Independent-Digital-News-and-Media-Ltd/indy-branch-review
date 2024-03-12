@@ -1,0 +1,8 @@
+export default ButtonGroup;
+declare function ButtonGroup({ items }: {
+    items: any;
+}): import("react/jsx-runtime").JSX.Element | null;
+declare namespace ButtonGroup {
+    export { ButtonGroupTypes as propTypes };
+}
+import { ButtonGroupTypes } from './ButtonGroup.types';
