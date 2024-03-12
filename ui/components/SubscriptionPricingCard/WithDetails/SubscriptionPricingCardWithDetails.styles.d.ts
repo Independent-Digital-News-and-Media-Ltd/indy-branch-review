@@ -1,0 +1,1 @@
+export const WithDetailsWrapper: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<import("../Base/SubscriptionPricingCard.types").default, never>> & Omit<import("react").FC<import("../Base/SubscriptionPricingCard.types").default>, keyof import("react").Component<any, {}, any>>;

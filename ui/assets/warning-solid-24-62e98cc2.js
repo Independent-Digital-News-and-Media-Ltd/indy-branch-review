@@ -1,0 +1,2 @@
+var l=Object.defineProperty;var t=(e,r)=>l(e,"name",{value:r,configurable:!0});import{r as o}from"./index-b56a0300.js";const a=t(e=>o.createElement("svg",{xmlns:"http://www.w3.org/2000/svg",id:"87c733016f82047e",viewBox:"0 0 16 16",...e},o.createElement("path",{fill:"currentColor",d:"M.67 14.33h14.66L8 1.67zm8-2H7.33V11h1.34zm0-2.66H7.33V7h1.34z"})),"SvgWarningSolid24"),c=Object.freeze(Object.defineProperty({__proto__:null,default:a},Symbol.toStringTag,{value:"Module"}));export{a as S,c as _};
+//# sourceMappingURL=warning-solid-24-62e98cc2.js.map
