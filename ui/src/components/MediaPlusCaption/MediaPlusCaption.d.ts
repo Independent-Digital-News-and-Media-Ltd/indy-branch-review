@@ -1,0 +1,5 @@
+import { FC } from 'react';
+import { MediaPlusCaptionProps, MediaPlusCaptionForSliderProps } from './MediaPlusCaption.types';
+export declare const MediaPlusFlushCaption: FC<MediaPlusCaptionProps>;
+export declare const MediaPlusPaddedCaption: FC<MediaPlusCaptionProps>;
+export declare const MediaPlusCaptionForSlider: import("react").ForwardRefExoticComponent<Omit<MediaPlusCaptionForSliderProps, "ref"> & import("react").RefAttributes<HTMLDivElement>>;
