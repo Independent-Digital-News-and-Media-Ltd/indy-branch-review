@@ -1,0 +1,2 @@
+/// <reference types="react" />
+export declare const StyledMediaPlusPaddedCaption: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<import("../MediaPlusCaption/MediaPlusCaption.types").MediaPlusCaptionProps, never>> & Omit<import("react").FC<import("../MediaPlusCaption/MediaPlusCaption.types").MediaPlusCaptionProps>, keyof import("react").Component<any, {}, any>>;
