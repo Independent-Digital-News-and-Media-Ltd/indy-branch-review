@@ -1,0 +1,2 @@
+import{u as t}from"./styled-components.browser.esm-dd68fb2f.js";const a=t.span.withConfig({componentId:"sc-1d1z3rd-0"})(["display:inline-block;padding:","px ","px 2px;border-radius:","px;background-color:",";font:",";text-transform:uppercase;"],({theme:o})=>o.spacing.x0_5,({theme:o})=>o.spacing.x1,({theme:o})=>o.spacing.x2,({theme:o})=>o.color.semiotic.attention,o=>o.theme.textStyle.capsule.base);export{a as C};
+//# sourceMappingURL=Capsule-8b53ab25.js.map
