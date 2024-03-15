@@ -1,0 +1,8 @@
+/// <reference types="react" />
+import { type IconButtonProps } from '../../IconButton';
+export declare const Boundary: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<import("react").DetailedHTMLProps<import("react").HTMLAttributes<HTMLDivElement>, HTMLDivElement>, never>>;
+export declare const Header: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<import("react").DetailedHTMLProps<import("react").HTMLAttributes<HTMLDivElement>, HTMLDivElement>, never>>;
+export declare const CloseButton: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").Substitute<import("styled-components/dist/types").FastOmit<import("styled-components/dist/types").Substitute<IconButtonProps, IconButtonProps>, never>, Omit<IconButtonProps, "svg" | "size" | "isCosy">>> & Omit<import("react").FC<IconButtonProps>, keyof import("react").Component<any, {}, any>>;
+export declare const Body: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<import("react").DetailedHTMLProps<import("react").HTMLAttributes<HTMLDivElement>, HTMLDivElement>, never>>;
+export declare const Title: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<import("react").DetailedHTMLProps<import("react").HTMLAttributes<HTMLDivElement>, HTMLDivElement>, never>>;
+export declare const Footer: import("styled-components").IStyledComponent<"web", import("styled-components/dist/types").FastOmit<import("react").DetailedHTMLProps<import("react").HTMLAttributes<HTMLElement>, HTMLElement>, never>>;
