@@ -1,0 +1,20 @@
+/// <reference types="" />
+import { HTMLProps } from 'react';
+import { IconSizes } from '../../../Icon/Icon.types';
+import { FormInputProps } from '../Input.types';
+type InputProps = FormInputProps<HTMLInputElement>;
+type OmitProps = Omit<InputProps, 'helpText' | 'state' | 'message' | 'label' | 'size'>;
+export type CheckboxSize = Exclude<IconSizes, 'x-small'>;
+export interface CheckboxProps extends OmitProps {
+    size?: CheckboxSize;
+    label?: ReactNode;
+}
+export interface WrapperProps {
+    $size: CheckboxSize;
+    $disabled: boolean;
+    className?: string;
+}
+export interface LabelProps extends HTMLProps<HTMLLabelElement> {
+    $disabled: boolean;
+}
+export {};
