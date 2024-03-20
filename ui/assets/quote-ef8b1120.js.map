@@ -1,0 +1,1 @@
+{"version":3,"file":"quote-ef8b1120.js","sources":["../../../src/assets/quote.svg"],"sourcesContent":["export default \"__VITE_ASSET__abc29d7b__\""],"names":["SvgQuote","__name","props","React.createElement"],"mappings":"uHACK,MAACA,EAAWC,EAACC,GAA0BC,gBAAoB,MAAO,CAAE,MAAO,6BAA8B,GAAI,mBAAoB,KAAM,eAAgB,QAAS,YAAa,GAAGD,CAAO,EAAkBC,EAAmB,cAAC,OAAQ,CAAE,EAAG,smBAAumB,CAAC,EAAt0B"}

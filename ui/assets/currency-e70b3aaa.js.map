@@ -1,0 +1,1 @@
+{"version":3,"file":"currency-e70b3aaa.js","sources":["../../../src/utils/currency.ts"],"sourcesContent":["export function getPriceWithoutDecimals(price: string) {\n  return price.split('.').at(0) || '';\n}\n"],"names":["getPriceWithoutDecimals","price","split","at"],"mappings":"+EAAO,SAASA,EAAwBC,EAAe,CACrD,OAAOA,EAAMC,MAAM,GAAG,EAAEC,GAAG,CAAC,GAAK,EACnC,CAFgBH,EAAAA,EAAAA"}
