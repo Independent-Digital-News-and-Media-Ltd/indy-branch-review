@@ -1,0 +1,1 @@
+export declare const base: import("../types/styled").ThemeType, premium: import("../types/styled").ThemeType, climate: import("../types/styled").ThemeType, sgi: import("../types/styled").ThemeType, luxury: import("../types/styled").ThemeType;
