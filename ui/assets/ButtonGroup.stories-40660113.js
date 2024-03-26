@@ -1,0 +1,30 @@
+var P=Object.defineProperty;var u=(r,m)=>P(r,"name",{value:m,configurable:!0});import{j as t}from"./jsx-runtime-91e341d4.js";import{r as U}from"./index-b56a0300.js";import{u as o,a as $}from"./styled-components.browser.esm-dd68fb2f.js";import{h as D,e as W}from"./Button.constants-c6e6f0a7.js";import{I as R}from"./Icon.hoc-787425e7.js";import{t as Z}from"./devices-1d39230d.js";import{S as M}from"./chevron-right-solid-16-d3b4b323.js";import"./index-17b0cd16.js";import{p as s}from"./index-6925154b.js";import{S as H,i as J,j as K,k as Q,l as V,m as Y,n as rr,o as er,p as tr}from"./train-outline-24-af2115e9.js";import{S as or}from"./bed-outline-24-eec1dd7f.js";import"./_commonjsHelpers-c38d1a10.js";import"./Icon.constants-f71a83c2.js";import"./Symbols.hoc-d0e330fb.js";import"./breakPoints-89c7d41a.js";const sr=o.div.withConfig({componentId:"sc-1xl7n1n-0"})(["display:block;"]),ir=o.ul.withConfig({componentId:"sc-1xl7n1n-1"})(["--gap:16px;--cols:2;--max-width:100%;--total-gap:calc(var(--gap) * (var(--cols) - 1));--item-width:calc((100% - var(--total-gap)) / var(--cols));display:flex;max-width:var(--max-width);flex-flow:row wrap;justify-content:center;gap:var(--gap);padding:0;margin:0 auto;list-style:none;> li{width:var(--item-width);flex:0 1 var(--item-width);padding:0;margin:0;}@media ","{--cols:3;--max-width:100%;","}"],Z,({$itemCount:r})=>r===4||r===2?$(["--cols:2;--max-width:calc(100% / 3 * 2);"]):""),ar=o.div.withConfig({componentId:"sc-1xl7n1n-2"})(["display:flex;min-width:0;flex-flow:row wrap;column-gap:","em;line-height:inherit;span{display:inline-block;overflow:hidden;max-width:100%;text-overflow:ellipsis;}"],({theme:r})=>r.dimension.text.spaceWidthEm),X=o(R).attrs({size:D}).withConfig({componentId:"sc-1xl7n1n-3"})([""]),_=o(R).attrs({svg:M,size:W}).withConfig({componentId:"sc-1xl7n1n-4"})(["display:block;margin-left:auto;color:currentColor;"]),nr=o.a.withConfig({componentId:"sc-1xl7n1n-5"})(["--color:",";--bg:",";display:flex;height:","px;box-sizing:border-box;flex-flow:row nowrap;align-items:center;gap:","px;padding:0 ","px;border:1px solid ",";border-radius:","px;background-color:var(--bg);color:var(--color);font:",";transition:",";&:hover,&:active{--color:",";--bg:",";border-color:var(--bg);color:var(--color);}",",","{flex-shrink:0;}"],({theme:r})=>r.color.ink.base,({theme:r})=>r.color.actionBold.base,({theme:r})=>r.dimension.btn.height,({theme:r})=>r.dimension.btn.iconSpacing,({theme:r})=>r.spacing.x1,({theme:r})=>r.color.divider.light,({theme:r})=>r.dimension.btn.borderRadius,({theme:r})=>r.textStyle.buttonGroup.base,({theme:r})=>r.transition.button,({theme:r})=>r.color.ink.inverted,({theme:r})=>r.color.actionBold.alt,X,_),lr={title:s.string.isRequired,url:s.string.isRequired,icon:s.func.isRequired},cr={items:s.arrayOf(s.shape(lr).isRequired).isRequired},d=u(({items:r})=>!Array.isArray(r)||!(r!=null&&r.length)?null:t.jsx(sr,{children:t.jsx(ir,{$itemCount:r.length,children:r.map(({title:m,url:E,icon:G,target:z},F)=>t.jsx("li",{children:t.jsxs(nr,{href:E,target:z,children:[t.jsx(X,{svg:G}),t.jsx(ar,{children:m.split(" ").map((L,N)=>t.jsx(U.Fragment,{children:t.jsxs("span",{children:[L," "]})},`title-${N}`))}),t.jsx(_,{})]})},`item-${F}`))})}),"ButtonGroup");d.propTypes=cr;const pr=d;d.__docgenInfo={description:"",methods:[],displayName:"ButtonGroup",props:{items:{description:"",type:{name:"arrayOf",value:{name:"shape",value:{title:{name:"string",required:!0},url:{name:"string",description:`@todo switch this to a CustomPropType.url.isRequired once we have a way of
+sharing them between flow-web and UI lib`,required:!0},icon:{name:"func",required:!0}}}},required:!0}}};const e={items:[{title:"Book flights",url:"#",icon:H},{title:"Rent a car",url:"#",icon:J},{title:"Book trains",url:"#",icon:K},{title:"Travel insurance",url:"#",icon:Q},{title:"Airport extras",url:"#",icon:V},{title:"Book ferries",url:"#",icon:Y},{title:"Find tours",url:"#",icon:rr},{title:"Book airport parking",url:"#",icon:er},{title:"Book airport transfers",url:"#",icon:tr},{title:"Book accommodation",url:"#",icon:or}]},Or={title:"Components/Button Group",component:pr,argTypes:{items:{description:"Items",control:{type:"object"}}}},i={args:e},a={args:{...e,items:e.items.slice(0,5)}},n={args:{...e,items:e.items.slice(0,4)}},l={args:{...e,items:e.items.slice(0,3)}},c={args:{...e,items:e.items.slice(0,2)}},p={args:{...e,items:e.items.slice(0,1)}};var g,f,h;i.parameters={...i.parameters,docs:{...(g=i.parameters)==null?void 0:g.docs,source:{originalSource:`{
+  args: defaultArgs
+}`,...(h=(f=i.parameters)==null?void 0:f.docs)==null?void 0:h.source}}};var x,v,w;a.parameters={...a.parameters,docs:{...(x=a.parameters)==null?void 0:x.docs,source:{originalSource:`{
+  args: {
+    ...defaultArgs,
+    items: defaultArgs.items.slice(0, 5)
+  }
+}`,...(w=(v=a.parameters)==null?void 0:v.docs)==null?void 0:w.source}}};var b,S,y;n.parameters={...n.parameters,docs:{...(b=n.parameters)==null?void 0:b.docs,source:{originalSource:`{
+  args: {
+    ...defaultArgs,
+    items: defaultArgs.items.slice(0, 4)
+  }
+}`,...(y=(S=n.parameters)==null?void 0:S.docs)==null?void 0:y.source}}};var B,A,I;l.parameters={...l.parameters,docs:{...(B=l.parameters)==null?void 0:B.docs,source:{originalSource:`{
+  args: {
+    ...defaultArgs,
+    items: defaultArgs.items.slice(0, 3)
+  }
+}`,...(I=(A=l.parameters)==null?void 0:A.docs)==null?void 0:I.source}}};var k,O,j;c.parameters={...c.parameters,docs:{...(k=c.parameters)==null?void 0:k.docs,source:{originalSource:`{
+  args: {
+    ...defaultArgs,
+    items: defaultArgs.items.slice(0, 2)
+  }
+}`,...(j=(O=c.parameters)==null?void 0:O.docs)==null?void 0:j.source}}};var T,C,q;p.parameters={...p.parameters,docs:{...(T=p.parameters)==null?void 0:T.docs,source:{originalSource:`{
+  args: {
+    ...defaultArgs,
+    items: defaultArgs.items.slice(0, 1)
+  }
+}`,...(q=(C=p.parameters)==null?void 0:C.docs)==null?void 0:q.source}}};const jr=["Default","X5","X4","X3","X2","X1"];export{i as Default,p as X1,c as X2,l as X3,n as X4,a as X5,jr as __namedExportsOrder,Or as default};
+//# sourceMappingURL=ButtonGroup.stories-40660113.js.map
