@@ -1,0 +1,9 @@
+var l=Object.defineProperty;var s=(e,t)=>l(e,"name",{value:t,configurable:!0});import{j as r}from"./jsx-runtime-91e341d4.js";import{u as n}from"./styled-components.browser.esm-dd68fb2f.js";import{I as m}from"./Image-388cf5e5.js";import{P as g,M as u}from"./MediaPlusCaption-29f1e828.js";import"./index-b56a0300.js";import"./_commonjsHelpers-c38d1a10.js";import"./devices-1d39230d.js";import"./breakPoints-89c7d41a.js";const f=n(u).withConfig({componentId:"sc-1balrqd-0"})(["","{margin-bottom:","px;background:",";}"],g,({theme:e})=>e.spacing.x2,({theme:e})=>e.color.canvas.base),a=s(({caption:e,copyright:t,children:d})=>r.jsx(f,{caption:e,copyright:t,children:d}),"LiveBlogHero");try{a.displayName="LiveBlogHero",a.__docgenInfo={description:"",displayName:"LiveBlogHero",props:{className:{defaultValue:null,description:"",name:"className",required:!1,type:{name:"string"}},caption:{defaultValue:null,description:"",name:"caption",required:!1,type:{name:"string"}},copyright:{defaultValue:null,description:"",name:"copyright",required:!1,type:{name:"string"}}}}}catch{}const v=n.div.withConfig({componentId:"sc-vn3xll-0"})(["padding:20px;background-color:",";"],({theme:e})=>e.color.canvas.secondary),y=n(m).withConfig({componentId:"sc-vn3xll-1"})(["display:block;aspect-ratio:3 / 2;object-fit:cover;"]),P={title:"Components/Live Blog Hero",component:a},x={caption:"Live blog video caption"},o={args:x,render:e=>r.jsx(v,{children:r.jsx(a,{...e,children:r.jsx(y,{})})})};var i,c,p;o.parameters={...o.parameters,docs:{...(i=o.parameters)==null?void 0:i.docs,source:{originalSource:`{
+  args: defaultArgs,
+  render: args => <Wrapper>
+      <LiveBlogHero {...args}>
+        <StyledImage />
+      </LiveBlogHero>
+    </Wrapper>
+}`,...(p=(c=o.parameters)==null?void 0:c.docs)==null?void 0:p.source}}};const q=["Default"];export{o as Default,q as __namedExportsOrder,P as default};
+//# sourceMappingURL=LiveBlogHero.stories-95ea85ba.js.map
