@@ -1,0 +1,2 @@
+var a=Object.defineProperty;var t=(o,r)=>a(o,"name",{value:r,configurable:!0});import{j as i}from"./jsx-runtime-91e341d4.js";const e=t(({children:o,...r})=>{const n=t(s=>{s.preventDefault()},"preventSubmission");return i.jsx("form",{noValidate:!0,onSubmit:n,...r,children:o})},"Form"),d=e;try{e.displayName="Form",e.__docgenInfo={description:"",displayName:"Form",props:{}}}catch{}export{d as F};
+//# sourceMappingURL=Form-a1df12a8.js.map
